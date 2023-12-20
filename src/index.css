@@ -36,10 +36,12 @@
 @font-face {
   font-family: gobold-relleno;
   src: url(/src/fonts/Gobold-Regular-Italic.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: gobold-sin-relleno;
   src: url(/src/fonts/Gobold-Hollow-Bold-Italic.ttf);
+  font-display: swap;
 }
 h1,.gobold-relleno{
   font-family: gobold-relleno;
