@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: gobold-relleno;
+  src: url(/src/fonts/Gobold-Regular-Italic.ttf);
+}
+@font-face {
+  font-family: gobold-sin-relleno;
+  src: url(/src/fonts/Gobold-Hollow-Bold-Italic.ttf);
+}
+h1,.gobold-relleno{
+  font-family: gobold-relleno;
+}
+h2,.gobold-sin-relleno{
+  font-family: gobold-sin-relleno;
+}
+p,a,input,::placeholder,button{
+  font-family: 'Montserrat', sans-serif; 
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
