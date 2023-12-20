@@ -3,8 +3,43 @@ import logoDg from "../assets/logoDG.webp";
 import { MdOutlineMenuOpen, MdClose, MdFacebook } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 
+const navLinks = [
+  {
+    id:crypto.randomUUID(),
+    href:'#',
+    text:'Inicio'
+  },
+  {
+    id:crypto.randomUUID(),
+    href:'#beneficios',
+    text:'Beneficios'
+  },
+  {
+    id:crypto.randomUUID(),
+    href:'#revendedores',
+    text:'Revendedores'
+  },
+  {
+    id:crypto.randomUUID(),
+    href:'#testimonios',
+    text:'Testimonios'
+  },
+  {
+    id:crypto.randomUUID(),
+    href:'#servicios',
+    text:'Servicios'
+  },
+  {
+    id:crypto.randomUUID(),
+    href:'#contacto',
+    text:'Contacto'
+  },
+
+]
+
 export const NavbarMobile = () => {
   const [handleMenuMobile, setHandleMenuMobile] = useState(false);
+  const [linkActive, setLinkActive] = useState("Inicio");
   return (
     <nav className="flex items-center justify-between md:hidden">
       <div
@@ -39,48 +74,16 @@ export const NavbarMobile = () => {
             className="fixed right-3 top-[14px]"
           />
           <ul className="flex flex-col text-center items-center px-0 gap-3">
-            <a
-              onClick={() => setHandleMenuMobile(false)}
-              href="#"
-              className="no-underline text-negro-dg font-semibold"
-            >
-              Inicio
-            </a>
-            <a
-              onClick={() => setHandleMenuMobile(false)}
-              href="#beneficios"
-              className="no-underline text-negro-dg font-semibold"
-            >
-              Beneficios
-            </a>
-            <a
-              onClick={() => setHandleMenuMobile(false)}
-              href="#revendedores"
-              className="no-underline text-negro-dg font-semibold"
-            >
-              Revendedores
-            </a>
-            <a
-              onClick={() => setHandleMenuMobile(false)}
-              href="#testimonios"
-              className="no-underline text-negro-dg font-semibold"
-            >
-              Testimonios
-            </a>
-            <a
-              onClick={() => setHandleMenuMobile(false)}
-              href="#servicios"
-              className="no-underline text-negro-dg font-semibold"
-            >
-              Servicios
-            </a>
-            <a
-              onClick={() => setHandleMenuMobile(false)}
-              href="#contacto"
-              className="no-underline text-negro-dg font-semibold"
-            >
-              Contacto
-            </a>
+            {
+              navLinks.map((navLink) => (
+                <a href={navLink.href} key={navLink.id} className={`no-underline font-semibold ${linkActive === navLink.text ? 'text-azul-dg' : 'text-negro-dg'}`} onClick={() => {
+                  setHandleMenuMobile(false);
+                  setLinkActive(navLink.text);
+                }}>
+                  {navLink.text}
+                </a>
+              ))
+            }
           </ul>
           <div className="flex items-center gap-2">
             {/**Buttons */}
