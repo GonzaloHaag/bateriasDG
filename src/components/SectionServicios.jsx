@@ -6,7 +6,7 @@ import servicio3 from "../assets/servicio-3.webp";
 
 export const SectionServicios = () => {
   return (
-    <section className="min-h-screen bg-white py-10 flex flex-col justify-center lg:py-0 scroll-mt-[70px] md:scroll-mt-0" id="servicios">
+    <section className="min-h-screen bg-white py-10 flex flex-col justify-center lg:py-0 scroll-mt-[72px] md:scroll-mt-[100px] lg:scroll-mt-0" id="servicios">
       <Container className="text-negro-dg">
         <div className="flex flex-col items-center md:items-start md:flex-row md:gap-3">
           <h3 className="gobold-sin-relleno text-3xl sm:text-4xl md:text-6xl m-0 p-0">
@@ -22,7 +22,7 @@ export const SectionServicios = () => {
             <img
               src={servicio1}
               alt="Servicio auxilio de baterías"
-              width="100%"
+              width='100%'
             />
             <p className="m-0 p-0 bg-negro-dg text-white min-h-[60px] flex flex-col text-center justify-center text-balance">
               <strong>AUXILIO </strong> DE BATERÍAS 24/7
@@ -38,7 +38,7 @@ export const SectionServicios = () => {
             <img
               src={servicio2}
               alt="Servicio auxilio de baterías"
-              width="100%"
+              width='100%'
             />
             <p className="m-0 p-0 bg-negro-dg text-white min-h-[60px] flex flex-col text-center justify-center text-balance">
               <strong>RECICLAJE RESPONSABLE </strong> DE BATERÍAS
@@ -54,7 +54,7 @@ export const SectionServicios = () => {
             <img
               src={servicio3}
               alt="Servicio auxilio de baterías"
-              width="100%"
+              width='100%'
             />
             <p className="m-0 p-0 bg-negro-dg text-white min-h-[60px] flex flex-col text-center justify-center text-balance">
               <strong>MANTENIMIENTO </strong> PROFESIONAL DE BATERÍAS

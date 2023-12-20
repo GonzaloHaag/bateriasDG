@@ -47,7 +47,7 @@ export const SectionDistribuidor = () => {
     }
   };
   return (
-    <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-5 scroll-mt-[70px] md:scroll-mt-0" id="revendedores">
+    <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-5 scroll-mt-[72px] md:scroll-mt-[100px] lg:scroll-mt-0" id="revendedores">
       <div className="bg-[url('../src/assets/DG-DISEÑO-WEB-03.webp')] flex justify-center text-white py-10 lg:py-20 bg-cover bg-center">
         <Container className="flex flex-col items-center justify-center lg:justify-between">
           <div className="flex flex-col text-center sm:gap-1 md:gap-2">

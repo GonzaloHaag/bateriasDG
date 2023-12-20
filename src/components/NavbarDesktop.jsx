@@ -1,5 +1,5 @@
 import React from "react";
-import logoDg from "../assets/logoDG.png";
+import logoDg from "../assets/logoDG.webp";
 import { MdFacebook } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 

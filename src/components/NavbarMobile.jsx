@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoDg from "../assets/logoDG.png";
+import logoDg from "../assets/logoDG.webp";
 import { MdOutlineMenuOpen, MdClose, MdFacebook } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 

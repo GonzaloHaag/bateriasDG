@@ -1,11 +1,11 @@
 import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import slider1 from '../assets/logo-moura.jpg';
-import slider2 from '../assets/logo-bateriasMorbi.jpg';
-import slider3 from '../assets/logo-giagnoniHermanos.jpg';
-import slider4 from '../assets/logo-sermat.jpg';
-import slider5 from '../assets/logo-adcdelco.jpg';
+import slider1 from '../assets/logo-moura.webp';
+import slider2 from '../assets/logo-bateriasMorbi.webp';
+import slider3 from '../assets/logo-giagnoniHermanos.webp';
+import slider4 from '../assets/logo-sermat.webp';
+import slider5 from '../assets/logo-adcdelco.webp';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -22,6 +22,7 @@ export const SliderMarcas = () => {
           </div>
        <Swiper
        spaceBetween={30}
+      //  centeredSlides={true}
        slidesPerView={2}
        breakpoints={{
        
@@ -42,19 +43,19 @@ export const SliderMarcas = () => {
         className='mt-5'
     >
       <SwiperSlide>
-        <img src={slider1} alt='logo-marca' />
+        <img src={slider1} alt='logo-marca' width={160} />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slider2} alt='logo-marca' />
+        <img src={slider2} alt='logo-marca' width={160} />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slider3} alt='logo-marca' />
+        <img src={slider3} alt='logo-marca' width={160} />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slider4} alt='logo-marca' />
+        <img src={slider4} alt='logo-marca' width={160} />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slider5} alt='logo-marca' />
+        <img src={slider5} alt='logo-marca' width={160} />
       </SwiperSlide>
     </Swiper>
     </Container>

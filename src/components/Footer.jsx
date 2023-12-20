@@ -53,7 +53,7 @@ const footerIcons = [
 
 export const Footer = () => {
   return (
-    <section className='min-h-screen w-full py-10 lg:py-0 flex flex-col justify-center bg-azul-dg scroll-mt-[70px] md:scroll-mt-0' id='contacto'>
+    <section className='min-h-screen w-full py-10 lg:py-0 flex flex-col justify-center bg-azul-dg scroll-mt-[72px] md:scroll-mt-[100px] lg:scroll-mt-0' id='contacto'>
        <Container className='text-white grid grid-grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-2'>
         <div className='flex flex-col gap-3 items-center md:items-start'>
             {/**Left */}
