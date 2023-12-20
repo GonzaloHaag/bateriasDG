@@ -16,7 +16,7 @@ import { Container } from 'react-bootstrap';
 
 export const SliderMarcas = () => {
   return (
-    <Container className='py-10 relative'>
+    <Container className='py-20 relative'>
          <div className='flex flex-col items-center md:items-start md:flex-row md:gap-3'>
             <h3 className='gobold-relleno text-3xl sm:text-4xl md:text-6xl m-0 p-0'>NUESTRAS</h3>
             <h4 className='gobold-sin-relleno text-3xl sm:text-4xl md:text-6xl m-0 p-0'>MARCAS</h4>

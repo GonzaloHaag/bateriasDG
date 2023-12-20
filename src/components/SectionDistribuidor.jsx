@@ -4,6 +4,7 @@ import { CiDiscount1 } from "react-icons/ci";
 import { RiMegaphoneLine } from "react-icons/ri";
 import { PiChatCenteredText } from "react-icons/pi";
 import { FaClipboardList } from "react-icons/fa";
+import swal from 'sweetalert'
 
 import emailjs from "@emailjs/browser";
 
@@ -23,12 +24,23 @@ export const SectionDistribuidor = () => {
       .then(
         (result) => {
           console.log(result.text);
-            // Resetear los campos del formulario
+          //Confirmacion de envio
+          swal({
+            title: "Gracias por contactarnos!",
+            text: "Nos comunicaremos con usted en breve.",
+            icon: "success",
+          })
+        // Resetear los campos del formulario
         resetFormFields();
          
         },
         (error) => {
           console.log(error.text);
+          swal({
+            title: "Ocurrió un error",
+            text: "Intente nuevamente en un momento.",
+            icon: "error",
+          })
         }
       );
   };
@@ -47,7 +59,7 @@ export const SectionDistribuidor = () => {
     }
   };
   return (
-    <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-5 scroll-mt-[72px] md:scroll-mt-[100px]" id="revendedores">
+    <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-5 scroll-mt-[65px]" id="revendedores">
       <div className="bg-[url('../src/assets/DG-DISEÑO-WEB-03.webp')] flex justify-center text-white py-10 lg:py-20 bg-cover bg-center">
         <Container className="flex flex-col items-center justify-center lg:justify-between">
           <div className="flex flex-col text-center sm:gap-1 md:gap-2">
@@ -106,9 +118,9 @@ export const SectionDistribuidor = () => {
               <strong>CÓMO SER UN REVENDEDOR.</strong>
             </p>
           </div>
-          <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-2 mt-5">
+          <form ref={form} onSubmit={sendEmail} autoComplete="off" className="flex flex-col gap-2 mt-5">
             <div className="flex items-center gap-2">
-              <input type="text" name="user_name" required placeholder="NOMBRE" className='w-2/4 py-2 lg:py-4 indent-3 border-1 border-black rounded-md' /> 
+              <input type="text" name="user_name" required placeholder="NOMBRE" className='w-2/4 py-2 lg:py-5 indent-3 border-1 border-black rounded-md' /> 
               <input type="text" name="user_surname" placeholder="APELLIDO" className='w-2/4 py-2 lg:py-4 indent-3 border-1 border-black rounded-md' />
             </div>
             <div className="flex items-center gap-2">
@@ -116,7 +128,7 @@ export const SectionDistribuidor = () => {
               <input type="email" name="user_email" required placeholder="EMAIL" className='w-2/4 py-2 lg:py-4 indent-3 border-1 border-black rounded-md' />
             </div>
 
-            <textarea name="message" placeholder="MENSAJE" className="w-full border-1 border-black min-h-[180px] py-2 lg:py-4 indent-3" />
+            <textarea name="message" placeholder="MENSAJE" required className="w-full border-1 border-black min-h-[180px] py-2 lg:py-4 indent-3" />
             <div className="w-full flex items-center justify-center lg:justify-end">
             <input type="submit" value="Enviar" className="bg-azul-dg text-white py-2 rounded-md font-medium text-lg w-full lg:w-max lg:px-8" />
             </div>

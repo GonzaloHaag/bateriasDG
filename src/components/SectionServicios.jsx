@@ -6,7 +6,7 @@ import servicio3 from "../assets/servicio-3.webp";
 
 export const SectionServicios = () => {
   return (
-    <section className="min-h-screen bg-white py-10 flex flex-col justify-center lg:py-0 scroll-mt-[72px] md:scroll-mt-[100px]" id="servicios">
+    <section className="min-h-screen bg-white py-10 flex flex-col justify-center scroll-mt-[65px]" id="servicios">
       <Container className="text-negro-dg">
         <div className="flex flex-col items-center md:items-start md:flex-row md:gap-3">
           <h3 className="gobold-sin-relleno text-3xl sm:text-4xl md:text-6xl m-0 p-0">

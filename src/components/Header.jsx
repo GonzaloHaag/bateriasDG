@@ -18,7 +18,7 @@ export const Header = () => {
      window.addEventListener('scroll',functionScroll);
   },[]);
   return (
-    <header className={`min-h-[55px] md:min-h-[65px] flex items-center w-full bg-white shadow-md transition-all duration-200 ${headerFijo ? 'fixed top-0 left-0 z-10' : 'relative '}`}>
+    <header className={`min-h-[65px] flex items-center w-full bg-white shadow-md transition-all duration-200 ${headerFijo ? 'fixed top-0 left-0 z-10' : 'relative '}`}>
         <Container>
              <NavbarMobile />
              <NavbarDesktop />

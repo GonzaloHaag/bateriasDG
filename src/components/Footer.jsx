@@ -53,7 +53,7 @@ const footerIcons = [
 
 export const Footer = () => {
   return (
-    <section className='min-h-screen w-full py-10 lg:py-0 flex flex-col justify-center bg-azul-dg scroll-mt-[72px] md:scroll-mt-[100px] lg:scroll-mt-0' id='contacto'>
+    <section className='min-h-screen w-full py-10 lg:py-0 flex flex-col justify-center bg-azul-dg scroll-mt-[65px]' id='contacto'>
        <Container className='text-white grid grid-grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-2'>
         <div className='flex flex-col gap-3 items-center md:items-start'>
             {/**Left */}
@@ -61,14 +61,14 @@ export const Footer = () => {
             <h3 className='gobold-relleno text-3xl sm:text-4xl xl:text-6xl m-0 p-0'>SOPORTE <span className='gobold-sin-relleno'>Y ATENCIÓN</span></h3>
             <h4 className='gobold-sin-relleno text-3xl sm:text-4xl xl:text-6xl m-0 p-0'>AL CLIENTE</h4>
         </div>
-        <p className='text-center md:text-start xl:text-xl'>COMPROMISO CON LA <strong>SATISFACCIÓN DEL CLIENTE</strong></p>
+        <p className='text-center md:text-start xl:text-xl text-balance'>COMPROMISO CON LA <strong>SATISFACCIÓN DEL CLIENTE</strong></p>
         <div className='flex flex-col gap-4'>
             {/**Icons */}
           {
             footerIcons.map((icon) => (
-                <a href={icon.href} key={icon.id} target='_blank' className='underline underline-offset-4 text-white flex items-center gap-2'>
+                <a href={icon.href} key={icon.id} target='_blank' className='no-underline cursor-pointer text-white flex items-center gap-2 p-0 m-0'>
                     {icon.icon}
-                    <p className='m-0 p-0 text-balance'>{icon.text}</p>
+                    <p className='m-0 p-0'>{icon.text}</p>
                 </a>
             ))
           }
@@ -77,7 +77,7 @@ export const Footer = () => {
         <div className='flex flex-col lg:justify-center'>
             {/**Right */}
             <h3 className='gobold-sin-relleno text-3xl sm:text-4xl md:text-6xl m-0 p-0 text-center'>CONTACTANOS</h3>
-            <form className='flex flex-col gap-2 mt-3'>
+            <form className='flex flex-col gap-2 mt-3' autoComplete="off">
                 <div className='flex items-center gap-2'>
                     <input className='w-2/4 indent-2 py-2 bg-inherit border-1 border-black font-medium text-white' type='text' placeholder='Nombre' required />
                     <input className='w-2/4 indent-2 py-2 bg-inherit border-1 border-black font-medium text-white' type='text' placeholder='Apellido' />

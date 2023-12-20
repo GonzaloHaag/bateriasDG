@@ -39,7 +39,7 @@ const iconsBeneficios = [
 
 export const SectionBeneficios = () => {
   return (
-    <section className='min-h-screen bg-azul-dg w-full flex flex-col justify-center scroll-mt-[72px] md:scroll-mt-[100px] lg:scroll-mt-0' id='beneficios'>
+    <section className='min-h-screen bg-azul-dg w-full flex flex-col justify-center scroll-mt-[65px]' id='beneficios'>
         <Container className='text-white py-10 md:py-0'>
           <div className='flex flex-col items-center md:items-start md:gap-3'>
             <h3 className='gobold-relleno text-3xl sm:text-4xl md:text-6xl m-0 p-0'>BENEFICIOS <span className='gobold-sin-relleno'>DE</span></h3>

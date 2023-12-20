@@ -30,7 +30,7 @@ const testimonios = [
 
 export const SectionComentarios = () => {
   return (
-    <section className="min-h-screen w-full bg-negro-dg py-10 md:py-0 flex flex-col justify-center scroll-mt-[72px] md:scroll-mt-[100px] lg:scroll-mt-0 " id="testimonios">
+    <section className="min-h-screen w-full bg-negro-dg py-10 md:py-0 flex flex-col justify-center scroll-mt-[65px]" id="testimonios">
       <Container className="text-white">
         <div className="flex flex-col items-center md:items-start md:flex-row md:gap-3">
           <h3 className="gobold-relleno text-3xl sm:text-4xl md:text-6xl m-0 p-0">
