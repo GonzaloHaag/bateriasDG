@@ -17,7 +17,7 @@ export const SectionBg = () => {
          </div>
      </Container>
      <a href='https://api.whatsapp.com/send/?phone=5493424670267&text&type=phone_number&app_absent=0' target='_blank' rel='noreferrer'>
-     <FaWhatsapp size={80} className='fill-white absolute bottom-5 right-10 p-3 border-2 border-white rounded-full' />
+     <FaWhatsapp size={80} className='fill-white absolute bottom-5 right-10 p-3 border-2 border-white rounded-full hover:fill-azul-dg transition-colors duration-200' />
      </a>
     </section>
   )

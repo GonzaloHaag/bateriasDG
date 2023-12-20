@@ -67,6 +67,7 @@ export const NavbarDesktop = () => {
             href="https://www.facebook.com/bateriasdariogiagnoni/"
             target="_blank"
             rel="noreferrer"
+            className="hover:text-negro-dg transition-colors duration-200"
           >
             <MdFacebook size={25} />
           </a>
@@ -74,6 +75,7 @@ export const NavbarDesktop = () => {
             href="https://www.instagram.com/bateriasdariogiagnoni/"
             target="_blank"
             rel="noreferrer"
+            className="hover:text-negro-dg transition-colors duration-200"
           >
             <FaInstagram size={25} />
           </a>
