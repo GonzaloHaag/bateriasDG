@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export const SectionBg = () => {
   return (
-    <section className="relative min-h-[calc(100vh-55px)] md:min-h-[calc(100vh-65px)] w-full bg-[url('../src/assets/BgImage.webp')] bg-cover bg-center flex items-center">
+    <section className="relative min-h-[calc(100vh-65px)] w-full bg-[url('../src/assets/BgImage.webp')] bg-cover bg-center flex items-center">
      <Container className='text-white flex flex-col gap-2'> {/**Para que todo tome el mismo ancho */}
          <div className='flex flex-col sm:gap-2 border-l-4 border-l-rojo-dg pl-1'>
             <h1 className='text-3xl sm:text-5xl md:text-6xl lg:text-7xl m-0'>BATERÍAS DE CALIDAD</h1>

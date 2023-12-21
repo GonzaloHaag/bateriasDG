@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { NavbarMobile,NavbarDesktop } from './index';
 
 export const Header = () => {
     const [headerFijo,setHeaderFijo] = useState(false);
-  useEffect(() => {
      const functionScroll = () => {
        if(window.scrollY > 0) {
         console.log('scroll');
@@ -16,9 +15,8 @@ export const Header = () => {
        }
      }
      window.addEventListener('scroll',functionScroll);
-  },[]);
   return (
-    <header className={`min-h-[65px] flex items-center w-full bg-white shadow-md transition-all duration-200 ${headerFijo ? 'fixed top-0 left-0 z-10' : 'relative '}`}>
+    <header className='min-h-[65px] sticky w-full bg-white z-10 flex items-center top-0'>
         <Container>
              <NavbarMobile />
              <NavbarDesktop />
