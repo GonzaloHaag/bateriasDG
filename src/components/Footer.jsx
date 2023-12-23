@@ -40,7 +40,7 @@ const footerIcons = [
    },
    {
     id:crypto.randomUUID(),
-    icon : <FaPhoneAlt size={30} /> ,
+    icon : <FaMapMarkerAlt size={30} /> ,
     href:'https://www.google.com/maps/place/Bater%C3%ADas+Dario+Giagnoni+%7C+Distribuidora+Nacional+de+baterias+%7C+Chaco+%7C+Ex+Baterias+Morbi/@-27.4391448,-59.0002489,17z/data=!3m1!4b1!4m6!3m5!1s0x94450c6ff03ce109:0x798f5ec251be887d!8m2!3d-27.4391448!4d-59.0002489!16s%2Fg%2F1tdv_zqg?entry=ttu',
     text:'Av. 25 de Mayo 1515, H3500 Resistencia, Chaco'
    },
@@ -94,7 +94,7 @@ export const Footer = () => {
             {/**Icons container */}
           {
             footerIcons.map((icon) => (
-                <a href={icon.href} key={icon.id} className='flex items-center gap-3 no-underline text-white'>
+                <a href={icon.href} key={icon.id} rel='noreferrer' target='_blank' className='flex items-center gap-3 no-underline text-white'>
                     <div>{icon.icon}</div>
                     <p className='m-0 p-0 text-base'>{icon.text}</p>
                 </a>
@@ -136,7 +136,7 @@ export const Footer = () => {
                 <textarea name='message' placeholder='Mensaje' className='min-h-[220px] w-full px-2 py-2 bg-inherit border-2 border-black focus:outline-white font-medium text-white rounded-md' required>
                 </textarea>
                 <div className='flex justify-end'>
-                <input type='submit' value='Enviar' className='bg-negro-dg py-2 w-full lg:w-max lg:px-12 lg:text-end rounded-md cursor-pointer' />     
+                <input type='submit' value='Enviar' className='bg-negro-dg py-2 w-full lg:w-max lg:px-12 lg:text-end rounded-md cursor-pointer hover:bg-gray-700 transition-colors duration-200' />     
                </div>
             </form>
         </div>

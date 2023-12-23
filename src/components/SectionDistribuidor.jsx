@@ -82,7 +82,7 @@ export const SectionDistribuidor = () => {
           </div>
           <a
             href="https://api.whatsapp.com/send/?phone=5493424670267&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer"
-            className="no-underline text-white text-xl mt-5 bg-rojo-dg px-8 py-2 rounded-md"
+            className="no-underline text-white text-xl mt-5 bg-rojo-dg px-8 py-2 rounded-md hover:bg-azul-dg transition-all duration-500"
           >
             Contactános
           </a>
@@ -108,7 +108,7 @@ export const SectionDistribuidor = () => {
 
             <textarea name="message" placeholder="MENSAJE" required className="w-full py-2 md:py-4 border-2 border-gray-400 focus:outline-black rounded-md min-h-[200px] px-3" />
             <div className="w-full flex items-center justify-center lg:justify-end">
-            <input type="submit" value="Enviar" className="bg-azul-dg text-white py-2 rounded-md font-medium text-lg w-full lg:w-max lg:px-8 cursor-pointer" />
+            <input type="submit" value="Enviar" className="bg-azul-dg hover:bg-rojo-dg transition-all duration-500 text-white py-2 rounded-md font-medium text-lg w-full lg:w-max lg:px-8 cursor-pointer" />
             </div>
           
           </form>
