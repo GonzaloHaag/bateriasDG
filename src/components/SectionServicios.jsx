@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import servicio1 from "../assets/servicio-1.webp";
 import servicio2 from "../assets/servicio-2.webp";
 import servicio3 from "../assets/servicio-3.webp";
@@ -7,7 +6,7 @@ import servicio3 from "../assets/servicio-3.webp";
 export const SectionServicios = () => {
   return (
     <section className="min-h-screen bg-white py-10 flex flex-col justify-center scroll-mt-[65px]" id="servicios">
-      <Container className="text-negro-dg">
+      <div className="text-negro-dg px-2 container w-full min-[576px]:max-w-[540px]: mx-auto min-[768px]:max-w-[720px] min-[992px]:max-w-[960px] min-[1200px]:max-w-[1140px] min-[1400px]:max-w-[1320px]">
         <div className="flex flex-col items-center md:items-start md:flex-row md:gap-3">
           <h3 className="gobold-sin-relleno text-3xl sm:text-4xl md:text-6xl m-0 p-0">
             NUESTROS
@@ -66,7 +65,7 @@ export const SectionServicios = () => {
             </p>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

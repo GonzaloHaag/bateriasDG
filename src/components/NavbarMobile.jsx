@@ -73,7 +73,7 @@ export const NavbarMobile = () => {
             onClick={() => setHandleMenuMobile(false)}
             className="fixed right-3 top-[14px]"
           />
-          <ul className="flex flex-col text-center items-center px-0 gap-3">
+          <ul className="flex flex-col text-center items-center px-0 gap-4">
             {
               navLinks.map((navLink) => (
                 <a href={navLink.href} key={navLink.id} className={`no-underline font-semibold ${linkActive === navLink.text ? 'text-azul-dg' : 'text-negro-dg'}`} onClick={() => {
@@ -85,13 +85,13 @@ export const NavbarMobile = () => {
               ))
             }
           </ul>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 mt-5">
             {/**Buttons */}
             <a
               href="https://www.facebook.com/bateriasdariogiagnoni/"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-negro-dg transition-colors duration-200"
+              className="hover:text-negro-dg transition-colors duration-200 text-azul-dg"
             >
               <MdFacebook size={25} />
             </a>
@@ -99,7 +99,7 @@ export const NavbarMobile = () => {
               href="https://www.instagram.com/bateriasdariogiagnoni/"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-negro-dg transition-colors duration-200"
+              className="hover:text-negro-dg transition-colors duration-200 text-azul-dg"
             >
               <FaInstagram size={25} />
             </a>

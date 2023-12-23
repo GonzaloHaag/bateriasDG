@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import logoDg from "../assets/logoDG.webp";
 import { MdFacebook } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
@@ -67,7 +67,7 @@ export const NavbarDesktop = () => {
             href="https://www.facebook.com/bateriasdariogiagnoni/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-negro-dg transition-colors duration-200"
+            className="hover:text-negro-dg transition-colors duration-200 text-azul-dg"
           >
             <MdFacebook size={25} />
           </a>
@@ -75,7 +75,7 @@ export const NavbarDesktop = () => {
             href="https://www.instagram.com/bateriasdariogiagnoni/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-negro-dg transition-colors duration-200"
+            className="hover:text-negro-dg transition-colors duration-200 text-azul-dg"
           >
             <FaInstagram size={25} />
           </a>

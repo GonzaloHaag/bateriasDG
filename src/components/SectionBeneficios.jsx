@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import imgBeneficios from '../assets/DG-DISEÑO-WEB-10.webp';
 import imgVariedad from '../assets/DG-DISEÑO-WEB-11.webp';
 import imgCompatibilidad from '../assets/DG-DISEÑO-WEB-12.webp';
@@ -40,7 +39,7 @@ const iconsBeneficios = [
 export const SectionBeneficios = () => {
   return (
     <section className='min-h-screen bg-azul-dg w-full flex flex-col justify-center scroll-mt-[65px]' id='beneficios'>
-        <Container className='text-white py-10 md:py-0'>
+        <div className='text-white py-10 md:py-0 px-2 container w-full min-[576px]:max-w-[540px]: mx-auto min-[768px]:max-w-[720px] min-[992px]:max-w-[960px] min-[1200px]:max-w-[1140px] min-[1400px]:max-w-[1320px]'>
           <div className='flex flex-col items-center md:items-start md:gap-3'>
             <h3 className='gobold-relleno text-3xl sm:text-4xl md:text-6xl m-0 p-0'>BENEFICIOS <span className='gobold-sin-relleno'>DE</span></h3>
             <h4 className='gobold-sin-relleno text-3xl sm:text-4xl md:text-6xl m-0 p-0'>NUESTRAS BATERÍAS</h4>
@@ -56,7 +55,7 @@ export const SectionBeneficios = () => {
                 ))
             }
           </div>
-        </Container>
+        </div>
     </section>
   )
 }
